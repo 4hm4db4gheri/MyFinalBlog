@@ -1,60 +1,82 @@
 @font-face {
-    font-family: Vazir;
-    src: url("../fonts/Vazir.ttf");
-  }
-  * {
-    font-family: Vazir;
-    
-  }
-  .header {
-    background-color: #007fff;
-    height: 224px;
-    width: 100%;
-    color: #f8f7f2;
-  }
-  .img-header {
-    display: block;
-    overflow: hidden;
-    border-radius: 9999px;
-    width: 6rem;
-    margin: 50px 10px 50px 50px;
-  }
-  .MUSTCHANGENAME {
-    display: flex;
-    align-items: center;
-  }
-  .nav-header {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 10px;
-  }
-  .nav-items {
-    margin-right: 1.7rem;
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
-  }
-  .nav-items:hover {
-    background-color: #2e2e2e12;
-    border-radius: 10px;
-    cursor: pointer;
-    outline: none;
-    transition-duration: 0.15s;
-  }
-  .personal-info{
-    height: 276px;
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    background-color: #0d2240;
+  font-family: Vazir;
+  src: url("../fonts/Vazir.ttf");
+}
+* {
+  font-family: Vazir;
+}
+.header {
+  background-color: #007fff;
+  height: 224px;
+  width: 100%;
+  color: #f8f7f2;
+}
+.img-header {
+  display: block;
+  overflow: hidden;
+  border-radius: 9999px;
+  width: 6rem;
+  margin: 50px 10px 50px 50px;
+}
+.MUSTCHANGENAME {
+  display: flex;
+  align-items: center;
+}
+.nav-header {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+.nav-items {
+  margin-right: 1.7rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+.nav-items:hover {
+  background-color: #2e2e2e12;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+  transition-duration: 0.15s;
+}
+.personal-info {
+  height: 276px;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: #0d2240;
+  color: white;
+}
+.img-main {
+  overflow: hidden;
+  border-radius: 9999px;
+  width: 11rem;
+  margin: 30px 10px 15px 10px;
+}
+.footer {
+  div p {
+    text-align: center;
+    margin: 5rem 10rem 10rem 10rem;
     color: white;
   }
-  .img-main{
-    overflow: hidden;
-    border-radius: 9999px;
-    width: 11rem;
-    margin: 30px 10px 15px 10px;
+  div {
+    text-align: center;
+    background-color: black;
+    display: block;
   }
-  
+}
+.note {
+  display: block;
+  padding-bottom: 30px;
+  background-color: #0f172a;
+  div {
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
