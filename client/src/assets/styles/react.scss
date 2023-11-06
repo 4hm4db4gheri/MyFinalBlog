@@ -1,0 +1,35 @@
+.div-component-text {
+  h1 {
+    display: block;
+  }
+  p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+  }
+  span{
+    margin-inline-end: 0.2em;
+}
+.fa-solid{
+    margin: 0 0.2rem;
+  }
+}
+.div-component-img {
+  // display: block;
+  // overflow: hidden;
+  // border-radius: 9999px;
+  width: 15rem;
+  display: block;
+  // margin: 50px 10px 50px 50px;
+}
+.div-component-react {
+  width: 60vw;
+  align-items: center;
+  display: flex;
+  // flex-wrap: wrap;
+  flex-direction: row;
+  gap: 1rem;
+  flex-basis: auto;
+}
