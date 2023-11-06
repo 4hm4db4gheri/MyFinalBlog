@@ -10,11 +10,11 @@ function MyInfo() {
           <strong>List of Moodle Install Guides</strong>
         </h1>
         <div className="article_detales">
-          <span>Sep 24, 2023 </span>
+          <span className="text-span-color">Sep 24, 2023 &nbsp;&nbsp;</span>
           <span>
             <i className="fa-solid fa-book-open"></i>
-            1 min read
           </span>
+          <span className="text-span-color">1 min read</span>
         </div>
         <p>
           https://www.howtoforge.com/how-to-install-moodle-on-ubuntu-22-04/
