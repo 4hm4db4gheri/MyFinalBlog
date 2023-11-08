@@ -8,3 +8,5 @@ secret.*
 Thumbs.db
 Thumb.db
 *.log
+.vscode
+database.sql
