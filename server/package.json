@@ -1,5 +1,15 @@
 {
     "name": "final-myblog",
     "author": "Ahmad Bagheri",
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "type": "module",
+    "dependencies": {
+        "koa": "^2.14.2",
+        "mariadb": "^3.2.2",
+        "mysql": "^2.18.1",
+        "mysql2": "^3.6.3"
+    },
+    "devDependencies": {
+        "@types/node": "^20.9.0"
+    }
 }
