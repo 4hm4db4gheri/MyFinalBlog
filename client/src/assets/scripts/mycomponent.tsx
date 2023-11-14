@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/react.scss";
 import "../styles/reset.scss";
+import "../../../../server/mustchangename.js";
 
 function MyInfo() {
   return (
