@@ -18,7 +18,7 @@ function MyInfo(props: postProps) {
           <h1>
             <strong>{props.Title}</strong>
           </h1>
-          <div className="article_detales">
+          <div className="">
             <span className="text-span-color">{props.Date} &nbsp;&nbsp;</span>
             <span>
               <i className="fa-solid fa-book-open"></i>
