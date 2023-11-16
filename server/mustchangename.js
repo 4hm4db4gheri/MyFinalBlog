@@ -1,27 +1,39 @@
 import Koa from "koa";
 import mysql from "mysql2/promise";
 import KoaRouter from "koa-router";
+import cors from "@koa/cors";
 
 
 const app = new Koa();
 const router = new KoaRouter();
-const connection = await mysql.createConnection({ host: 'localhost', user: 'root', password: "", database: 'myblogdb' });
 
-router.post("/", async (ctx, next) => {
+app.use(cors());
 
-    const [rows, fields] = await connection.execute('SELECT * FROM informationlist');
-    console.log(rows);
-})
+const connectionConfig = {
+    host: 'localhost',
+    user: 'root',
+    password: '',
+    database: 'myblogdb',
+};
 
-app.use(router.routes(), router.allowedMethods());
+router.get('/api/posts', async (ctx) => {
+    try {
+        const connection = await mysql.createConnection(connectionConfig);
+        const [rows] = await connection.execute('SELECT * FROM informationlist');
+        ctx.body = rows;
+    } catch (error) {
+        console.log('sadfsadf');
+        console.error('Error fetching posts:', error.message);
+        ctx.status = 500;
+        ctx.body = { error: 'Internal Server Error' };
+    }
+});
 
-app.listen(3000);
-// async function main() {
-//     // create the connection
-//     const connection = await mysql.createConnection({ host: 'localhost', user: 'root', password: "", database: 'myblogdb' });
-//     // query database
-//     const [rows, fields] = await connection.execute('SELECT * FROM informationlist');
-//     console.log(rows);
-//     // console.log(fields);
-// }
-// main();
+app.use(router.routes);
+app.use(router.allowedMethods);
+
+const port = 8000;
+app.listen(port, () => {
+    console.log(`Server listening on http://localhost:${port}`);
+});
+

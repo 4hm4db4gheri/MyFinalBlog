@@ -2,6 +2,7 @@
     "name": "final-myblog",
     "author": "Ahmad Bagheri",
     "version": "1.0.0",
+    "type": "module",
     "dependencies": {
         "@fortawesome/fontawesome-svg-core": "^6.4.2",
         "@fortawesome/free-brands-svg-icons": "^6.4.2",
