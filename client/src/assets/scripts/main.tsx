@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom/client";
 import { Outlet } from "react-router-dom";
-import MyInfo from "./mycomponent";
+import MyInfo from "./fpageListComponent";
 
 // const currentUrl = window.location.href;
 
