@@ -20,17 +20,16 @@ router.get('/api/posts', async (ctx) => {
     try {
         const connection = await mysql.createConnection(connectionConfig);
         const [rows] = await connection.execute('SELECT * FROM informationlist');
+        console.log(rows);
         ctx.body = rows;
     } catch (error) {
-        console.log('sadfsadf');
         console.error('Error fetching posts:', error.message);
         ctx.status = 500;
         ctx.body = { error: 'Internal Server Error' };
     }
 });
 
-app.use(router.routes);
-app.use(router.allowedMethods);
+app.use(router.routes(), router.allowedMethods());
 
 const port = 8000;
 app.listen(port, () => {

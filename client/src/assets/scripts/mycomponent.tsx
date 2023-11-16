@@ -3,12 +3,11 @@ import "../styles/react.scss";
 import "../styles/reset.scss";
 
 type postProps = {
-  title: string;
-  date: string;
-  timeSpent: string;
-  content: string;
-  imageSrc: string;
-  postID: string
+  Title: string;
+  Date: string;
+  TimeSpent: string;
+  Content: string;
+  ImageSrc: string;
 };
 
 function MyInfo(props: postProps) {
@@ -17,18 +16,18 @@ function MyInfo(props: postProps) {
       <div className="div-component-react">
         <div className="div-component-text">
           <h1>
-            <strong>{props.title}</strong>
+            <strong>{props.Title}</strong>
           </h1>
           <div className="article_detales">
-            <span className="text-span-color">{props.date} &nbsp;&nbsp;</span>
+            <span className="text-span-color">{props.Date} &nbsp;&nbsp;</span>
             <span>
               <i className="fa-solid fa-book-open"></i>
             </span>
-            <span className="text-span-color">{props.timeSpent}</span>
+            <span className="text-span-color">{props.TimeSpent}</span>
           </div>
-          <p>{props.content}</p>
+          <p>{props.Content}</p>
         </div>
-        <img src={props.imageSrc} className="div-component-img" />
+        <img src={props.ImageSrc} className="div-component-img" />
       </div>
     </a>
   );
