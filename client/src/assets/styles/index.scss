@@ -5,7 +5,28 @@
 * {
   font-family: Vazir;
 }
-.header {
+.post-header{
+  background-color: #007fff;
+  width: 100%;
+  color: #f8f7f2;
+  padding: 16px 71.5px 16px 71.5px;
+  div{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+  }
+  div div{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+  div div div a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
+.fpage-header {
   background-color: #007fff;
   width: 100%;
   color: #f8f7f2;
@@ -40,7 +61,7 @@
   display: block;
   overflow: hidden;
   border-radius: 9999px;
-  width: 6rem;
+  width: 4rem;
 }
 .logo-header {
   padding: 50px 10px 30px 50px;

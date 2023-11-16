@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/react.scss";
 import "../styles/reset.scss";
+// import "../../post.html";
 
 type postProps = {
   Title: string;
@@ -12,7 +13,7 @@ type postProps = {
 
 function MyInfo(props: postProps) {
   return (
-    <a href="#">
+    <a href="../../post.html">
       <div className="div-component-react">
         <div className="div-component-text">
           <h1>
