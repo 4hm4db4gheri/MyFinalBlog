@@ -4,13 +4,16 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import { Layout } from "./Layout";
 import { Article } from "./Pages/Article";
+import { FirstPage } from "./Pages/FirstPage";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout />} />
-        <Route path="/post" element={<Article />} />
+        <Route path="/" element={<Layout />}>
+          <Route index element={<FirstPage />} />
+          <Route path="article" element={<Article/>}/>
+        </Route>
       </Routes>
     </BrowserRouter>
   );

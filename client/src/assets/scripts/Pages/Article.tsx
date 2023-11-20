@@ -1,4 +1,6 @@
 import React from "react";
+import "../../styles/react.scss";
+import "../../styles/reset.scss";
 
 export function Article() {
 	return (
