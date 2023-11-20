@@ -1,6 +1,7 @@
 import React from "react";
 import "../../styles/react.scss";
 import "../../styles/reset.scss";
+import { Link } from "react-router-dom";
 
 export function Article() {
 	return (
@@ -8,11 +9,11 @@ export function Article() {
 			<header className="post-header">
 				<div>
 					<div>
-						<a href="index.html">
+						<Link to="/">
 							<i className="fa-solid fa-angle-left fa-xl"></i>
-						</a>
+						</Link>
 						<div>
-							<a href="index.html">
+							<Link to="/">
 								<img
 									className="img-header"
 									src="assets/images/developer-high-resolution-logo.png"
@@ -20,7 +21,7 @@ export function Article() {
 								<span>
 									<h3>Ahmad Bagheri</h3>
 								</span>
-							</a>
+							</Link>
 						</div>
 					</div>
 					<div>Ahmad Bagheri</div>
