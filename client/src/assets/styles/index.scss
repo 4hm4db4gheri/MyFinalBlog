@@ -45,9 +45,8 @@
   gap: 30px;
   margin-left: 60px;
   margin-bottom: 30px;
-  // margin-top: 20px;
-  a{
-   padding: 10px;
+  a {
+    padding: 10px;
   }
   a:hover {
     background-color: #0072e5;
@@ -124,5 +123,50 @@
     align-items: center;
     flex-direction: column;
     gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    div p {
+      margin: 2.5rem ;
+    }
+  }
+  .img-main {
+    width: 8rem;
+  }
+  .personal-info {
+    height: 240px;
+  }
+  .MUSTCHANGENAME {
+    padding: 110px 0 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header {
+    a {
+      display: flex;
+      align-items: center;
+    }
+    a h2 {
+      display: flex;
+      align-items: center;
+    }
+  }
+  .img-header {
+    display: none;
+  }
+  .social-media-icons-div-header {
+    justify-content: center;
+    margin: 0 0 5px 0;
+    gap: 7px;
+    text-align: center;
+  }
+  .nav-header {
+    padding: 0;
+    span {
+      display: none;
+    }
   }
 }
