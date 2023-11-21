@@ -1,7 +1,7 @@
 import React from "react";
-import "../../styles/react.scss";
-import "../../styles/reset.scss";
 import { Link } from "react-router-dom";
+import "../../styles/index.scss"
+import "../../styles/reset.scss"
 
 export function Article() {
 	return (

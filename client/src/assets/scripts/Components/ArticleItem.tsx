@@ -19,12 +19,23 @@ export function ArticleItem(props: postProps) {
 					<h1>
 						<strong>{props.Title}</strong>
 					</h1>
-					<div className="">
-						<span className="text-span-color">{props.Date} &nbsp;&nbsp;</span>
+					<h2>
+						<strong>{props.Title}</strong>
+					</h2>
+					<div>
+						<span className="text-span-color">
+							<a className="date">
+								{props.Date} &nbsp;&nbsp;
+							</a>
+						</span>
 						<span>
 							<i className="fa-solid fa-book-open"></i>
 						</span>
-						<span className="text-span-color">{props.TimeSpent}</span>
+						<span className="text-span-color">
+							<a className="time-spent">
+								{props.TimeSpent}
+							</a>
+						</span>
 					</div>
 					<p>{props.Content}</p>
 				</div>

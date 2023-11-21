@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { ArticleItem } from "../Components/ArticleItem";
+import "../../styles/index.scss"
+import "../../styles/reset.scss"
+import { Link } from "react-router-dom";
 
 interface PostData {
     Title: string;
@@ -37,7 +40,7 @@ export function FirstPage() {
         <>
             <header className="fpage-header">
                 <div className="logo-header">
-                    <a href="index.html">
+                    <Link to="/">
                         <img
                             className="img-header"
                             src="assets/images/developer-high-resolution-logo.png"
@@ -45,7 +48,7 @@ export function FirstPage() {
                         <span>
                             <h2>Ahmad Bagheri</h2>
                         </span>
-                    </a>
+                    </Link>
                 </div>
                 <div className="social-media-icons-div-header">
                     <a href="#">

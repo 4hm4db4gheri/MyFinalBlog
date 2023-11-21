@@ -1,8 +1,14 @@
 .div-component-text {
   width: 4000px;
+  a {
+    color: #94a3b8;
+  }
   h1 {
     color: white;
     display: block;
+  }
+  h2 {
+    display: none;
   }
   p {
     color: #94a3b8;
@@ -42,3 +48,35 @@
   flex-basis: auto;
 }
 
+@media screen and (max-width: 600px) {
+  .div-component-react {
+    flex-wrap: wrap; // make img to come under content
+  }
+  .div-component-text {
+    p {
+      margin-top: 9px;
+      font-size: 18px;
+      color: #94a3b8;
+    }
+    h1 {
+      display: none;
+    }
+    h2 {
+      display: block;
+      color: white;
+    }
+    a {
+      font-size: 14px;
+      color: #94a3b8;
+    }
+  }
+  .div-component-react {
+    width: 92vw;
+    align-items: center;
+    display: flex;
+    // flex-wrap: wrap;
+    flex-direction: row;
+    gap: 1rem;
+    flex-basis: auto;
+  }
+}

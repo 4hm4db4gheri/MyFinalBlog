@@ -108,12 +108,12 @@
   padding-bottom: 30px;
   background-color: #0f172a;
 }
-.posts-list{
+.posts-list {
   padding-top: 50px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap:1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
 }
 .footer {
   div p {
@@ -141,6 +141,15 @@
 }
 
 @media screen and (max-width: 600px) {
+  .logo-header {
+    padding: 100px 20px 60px 20px;
+    justify-content: center;
+  }
+  .fpage-header {
+    a h2 {
+      margin: 0;
+    }
+  }
   .footer {
     div p {
       margin: 2.5rem;
