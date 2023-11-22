@@ -12,6 +12,8 @@ type postProps = {
 };
 
 export function ArticleItem(props: postProps) {
+	
+	
 	return (
 		<Link to={`/article`} state={
 			{

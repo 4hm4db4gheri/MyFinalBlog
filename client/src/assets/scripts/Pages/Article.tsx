@@ -1,10 +1,10 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import Markdown from 'react-markdown';
 import "../../styles/reset.scss";
 import "../../styles/article.scss"
 
 export function Article() {
-	// Use the useLocation hook to access the location state
 	const location = useLocation();
 	const { Title, Date, TimeSpent, Content } = location.state || {};
 	console.log(location.state);
@@ -53,7 +53,7 @@ export function Article() {
 				</div>
 				<div className="article-content">
 					<h1>{Title}</h1>
-					<p>{Content}</p>
+					<Markdown className="article-markdown">{Content}</Markdown>
 				</div>
 				<div className="article-footer">
 					<h3>Written by</h3>
