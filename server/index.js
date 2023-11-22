@@ -20,7 +20,6 @@ router.get('/api/posts', async (ctx) => {
     try {
         const connection = await mysql.createConnection(connectionConfig);
         const [rows] = await connection.execute('SELECT * FROM informationlist');
-        console.log(rows);
         ctx.body = rows;
     } catch (error) {
         console.error('Error fetching posts:', error.message);

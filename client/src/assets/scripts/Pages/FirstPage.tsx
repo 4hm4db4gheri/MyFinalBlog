@@ -95,7 +95,7 @@ export function FirstPage() {
                 <span>SBU Student, Computer Engineer</span>
             </section>
             <div className="posts-list-background">
-                <div id="list" className="posts-list">
+                <div className="posts-list">
                     {posts.map((post) => {
                         return (
                             <ArticleItem

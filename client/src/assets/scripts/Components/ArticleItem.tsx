@@ -13,7 +13,15 @@ type postProps = {
 
 export function ArticleItem(props: postProps) {
 	return (
-		<Link to="/article">
+		<Link to={`/article`} state={
+			{
+				Title: props.Title,
+				Date: props.Date,
+				TimeSpent: props.TimeSpent,
+				Content: props.Content,
+				ImageSrc: props.ImageSrc
+			}
+		}>
 			<div className="div-component-react">
 				<div className="div-component-text">
 					<h1>
